@@ -3,4 +3,8 @@ class ProjectsController < ApplicationController
     projects = Project.all
     render json: projects, status: 201
   end
+
+  def create
+    binding.pry
+  end
 end
