@@ -4,6 +4,11 @@ class ProjectsController < ApplicationController
     render json: projects, status: 201
   end
 
+  def show
+    project = Project.find_by(id: params[:id])
+    render json: project, status: 201
+  end
+
   def create
     binding.pry
   end
