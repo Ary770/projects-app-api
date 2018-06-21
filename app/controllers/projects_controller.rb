@@ -6,6 +6,7 @@ class ProjectsController < ApplicationController
 
   def show
     project = Project.find_by(id: params[:id])
+    binding.pry
     render json: project, status: 201
   end
 
