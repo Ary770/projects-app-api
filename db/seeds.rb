@@ -5,6 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+categories = [{name: 'Coding'}, {name: 'Home'}, {name: 'Family'}, {name: 'Home'}, {name: 'Music'}, {name: 'Todos'}]
+
+Category.create(categories)
 
 Project.create(name: 'create new react app from CLI Herbal medicine', category: Category.find_by(name: 'Coding'), notes: 'Man bun helvetica mlkshk, copper mug affogato labore chambray tilde fugiat incididunt. Ugh crucifix taxidermy, organic taiyaki cold-pressed flannel paleo literally subway tile mixtape austin aliqua ullamco', finish_by: 'August')
 
